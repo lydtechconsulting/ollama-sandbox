@@ -17,30 +17,26 @@ Ollama runs LLMs like Mistral or Llama locally.  They can be run in a docker con
 - DeepSeek Coder v2 – MoE code-specialized LLM with very strong performance on coding tasks.
 
 # First Time
-`docker run -d --name ollama ollama/ollama`
+``docker run -d --name ollama ollama/ollama``
 
 # Next Time
-`docker start ollama`
+``docker start ollama``
 
-# Run LLM:
-``
-docker exec -it ollama ollama run mistral
-docker exec -it ollama ollama run llama3.1
-docker exec -it ollama ollama run gemma2
-docker exec -it ollama ollama run qwen2.5
-docker exec -it ollama ollama run phi3
-docker exec -it ollama ollama run deepseek-coder-v2
-``
+# Run LLM
+``docker exec -it ollama ollama run mistral``
+``docker exec -it ollama ollama run llama3.1``
+``docker exec -it ollama ollama run gemma2``
+``docker exec -it ollama ollama run qwen2.5``
+``docker exec -it ollama ollama run phi3``
+``docker exec -it ollama ollama run deepseek-coder-v2``
+
 # Stop
 
 ``docker stop ollama``
 
-# Clear down
-``
-docker rm ollama
-docker system prune -a
-``
-# Check volume
-``
-docker inspect ollama
-``
+# Clear Down
+``docker rm ollama``
+``docker system prune -a``
+
+# Check Volume
+``docker inspect ollama``
