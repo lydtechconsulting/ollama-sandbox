@@ -24,10 +24,15 @@ Ollama runs LLMs like Mistral or Llama locally.  They can be run in a docker con
 
 # Run LLM
 ``docker exec -it ollama ollama run mistral``
+
 ``docker exec -it ollama ollama run llama3.1``
+
 ``docker exec -it ollama ollama run gemma2``
+
 ``docker exec -it ollama ollama run qwen2.5``
+
 ``docker exec -it ollama ollama run phi3``
+
 ``docker exec -it ollama ollama run deepseek-coder-v2``
 
 # Stop
@@ -36,6 +41,7 @@ Ollama runs LLMs like Mistral or Llama locally.  They can be run in a docker con
 
 # Clear Down
 ``docker rm ollama``
+
 ``docker system prune -a``
 
 # Check Volume
